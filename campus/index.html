@@ -1,0 +1,352 @@
+<!--Crear página web básica que tenga mínimo 25 elementos html distintos, de estos 25 elementos mínimo 12 deben tener atributos.
+La página debe tener una tabla, imágenes y video.
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Nombre del elemento" content="Contenido asignado"/>
+    <title>PORTAFOLIO</title>
+</head>
+<body>
+<!------------------------------HEADER  ------------------------------------->
+    <header class="header" id="header">
+        <hgroup class="titulo-portafolio" id="titutlo portafolio"> <!-- hgroup: permite agrupar las etique h1 a h6, se forme un bloque con las relacionadas y asi se toene un formato para los titulos-->
+            <h1>PORTAFOLIO</h1>
+        </hgroup>
+</header>
+<!-------------------------NAVEGACION-NAV------------------------------------------>
+
+    <main class="portafolio-completo" id="portafolio-completo">
+    <section class="contenido-nav">
+        <nav class="navegacion">
+            <a href="index.html">Home</a>
+            <a href="index.html">About</a>
+            <a href="index.html">Portafolio</a>
+            <a href="index.html">Skills</a>
+            <a href="index.html">Contact</a>
+        </nav>
+    </section>
+
+<!--------------------------BANNER----------------------------------------->
+
+<section class="banner-completo"> <!--Seccion  de banner completo-->
+    <div class="banner" id="banner"> 
+        <div class="texto-banner" id="texto-banner"> <!--div texto del banner-->
+            <h1>👋 Hi, i'm <strong>Valentina Pinzon Montoya!</strong></h1>
+            <p>💻 Front-end | Software Developer | Trainee</p> 
+            <P> <cite> "Si le das a alguien un programa, lo frustrarás un día. Si le enseñas a programar, lo frustrarás toda la vida." </cite></P>
+        </div>
+        <div class="btn-banner" id="btn-banner"> <!--div boton del banner-->
+            <button type="submit" name="btn" title="AboutMe" onclick="aboutMe()">Saber más</button>
+        </div>
+        <div class="img-banner" id="img-banner"> <!--div imagen del banner-->
+            <figure> <!--figure: se utiliza habitualmente para encerrar imágenes-->
+                <img src="/imagenes/azul.jpeg" alt="Error imagen del banner" width="300px" height="550px">
+                <figcaption>Valentina P.M</figcaption> <!--título opcional, un elemento figure-->
+            </figure>
+        </div>
+    </div>
+</section>
+<!-----------------------------LENGUAJES-------------------------------------->
+
+<section class="lenguajes-completos" id="lenguajes-completos"><!--seccion de lenguajes completos-->
+    <hgroup class="titulo-lenguaje" id="titulo-lenguaje">
+        <h1>LENGUAJES</h1>
+        <h2>lenguajes como Frontend:</h2>
+    </hgroup>
+<!------------------------articulo de html------------------------------------------->
+        <article>
+        <div class="logo-html" id="logo-html">
+        <figure>
+            <img src="/imagenes/HTML5_Badge_512.png" alt="Error imagen" width="300px" height="300px">
+            <figcaption>
+                HTML
+            </figcaption>
+        </figure> 
+        </div>
+        <div class="btn-banner" id="btn-html"> <!--div boton del banner usando en lenguaje mismo diseño-->
+            <button type="submit" name="btn" title="AboutMe" onclick="saberMasHtml()">Saber más</button>
+        </div>
+        </article>
+    </section>
+<!------------------------aside de html------------------------------------------->
+    <aside>
+        <div class="comentario-html" id="comentario-html">
+            <h1>¿Que es HTML?</h1>
+            <p>JavaScript es un lenguaje de alto nivel, dinámico e interpretado. Se define como orientado a objetos, basado en prototipos, imperativo y débilmente tipado. Junto al HTML y a CSS, es una de las tres tecnologías esenciales en la producción mundial webs: la mayoría de los sitios web la emplean y es compatible con todos los navegadores modernos sin necesidad de plug-ins. JavaScript posee una API para trabajar con texto, arrays, fechas y expresiones regulares.
+            <hr>
+            A pesar de algunos nombres y similitudes en la biblioteca estándar, JavaScript y Java no poseen ninguna relación y tienen semánticas muy diferentes. La sintaxis de JavaScript en realidad se deriva de C, mientras que su semántica y el diseño están influenciados por los lenguajes de programación Self y Scheme.</p>
+            <hr>
+        </div>
+    </aside>
+<!------------------------ articulo de css------------------------------------------->
+        <article>
+        <div class="logo-css" id="logo-css">
+        <figure>
+            <img src="/imagenes/CSS3_logo.svg.png" alt="Error imagen" width="300px" height="300px">
+            <figcaption>
+                CSS
+            </figcaption>
+        </figure>
+        </div>
+        <div class="btn-banner"  id="btn-css"> <!--div boton del banner usando en lenguajes mismo diseño-->
+            <button type="submit" name="btn" title="AboutMe" onclick="saberMasCss()">Saber más</button>
+        </div>
+    </article>
+    </section>
+    
+<!-----------------------aside css------------------------------------------->
+<aside>
+    <div class="comentario-css" id="comentario-css">
+        <h1>¿Que es CSS?</h1>
+        <p>JavaScript es un lenguaje de alto nivel, dinámico e interpretado. Se define como orientado a objetos, basado en prototipos, imperativo y débilmente tipado. Junto al HTML y a CSS, es una de las tres tecnologías esenciales en la producción mundial webs: la mayoría de los sitios web la emplean y es compatible con todos los navegadores modernos sin necesidad de plug-ins. JavaScript posee una API para trabajar con texto, arrays, fechas y expresiones regulares.
+        <hr>
+        A pesar de algunos nombres y similitudes en la biblioteca estándar, JavaScript y Java no poseen ninguna relación y tienen semánticas muy diferentes. La sintaxis de JavaScript en realidad se deriva de C, mientras que su semántica y el diseño están influenciados por los lenguajes de programación Self y Scheme.</p>
+        <hr>
+    </div>
+</aside>
+
+<!-----------------------articulo de js------------------------------------------->
+        <article>
+        <div class="logo-html" id="logo-html"> <!--lenguajes js-->
+        <figure>
+            <img src="/imagenes/js.png" alt="Error imagen" width="300px" height="300px">
+            <figcaption>
+                JavaScript
+            </figcaption>
+        </figure>
+        </div>
+        <div class="btn-banner" class="btn-banner" id="btn-banner"> <!--div boton del banner usando en lenguajes mismo diseño-->
+            <button type="submit" name="btn" title="AboutMe" onclick="saberMasJs()">Saber más</button>
+        </div>
+    </article>
+    </section>
+<!-----------------------aside js------------------------------------------->
+<aside>
+    <div class="comentario-html" id="comentario-html">
+        <h1>¿Que es JavaScript?</h1>
+        <p>JavaScript es un lenguaje de alto nivel, dinámico e interpretado. Se define como orientado a objetos, basado en prototipos, imperativo y débilmente tipado. Junto al HTML y a CSS, es una de las tres tecnologías esenciales en la producción mundial webs: la mayoría de los sitios web la emplean y es compatible con todos los navegadores modernos sin necesidad de plug-ins. JavaScript posee una API para trabajar con texto, arrays, fechas y expresiones regulares.
+        <hr>
+        A pesar de algunos nombres y similitudes en la biblioteca estándar, JavaScript y Java no poseen ninguna relación y tienen semánticas muy diferentes. La sintaxis de JavaScript en realidad se deriva de C, mientras que su semántica y el diseño están influenciados por los lenguajes de programación Self y Scheme.</p>
+        <hr>
+    </div>
+    
+</aside>
+<!--------------------------VIDEO----------------------------------------->
+<section class="video-front" id="video-front">
+    <hgroup class="titulo-video" id="titulo-video">
+        <h1>¿QUE ES SER <span>FRONTEND</span> DEVELOPER?</h1> <!--SPAN: Es un contenedor genérico en línea. Sirve para para aplicar estilo al texto o agrupar elementos en línea-->
+    <hgroup>
+    <div class="video" id="video">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/EHUpaGEIfXo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <!--se importa enlace desde YouTube-->
+    </div>
+</section>
+
+<!------------------------TABLA DE PROYECTOS REALIZADOS------------------------------>
+
+<section class="tabla-proyectos" id="tabla-proyectos">
+    <hgroup class="titulo-proyectos" id="titulo-proyectos">
+        <h1>PROYECTOS</h1>
+        <h2>Mis proyectos:</h2>
+    </hgroup>
+
+    <table class="tabla-completa">
+        <tr>
+            <th>PROYECTOS</th>
+            <th>LENGUAJE</th>
+            <th>ENLACE</th>
+        </tr>
+            <td>Campus</td>
+            <td>Html,css,js</td>
+            <td><a href="https://github.com/vdevalen/campus-separado">Click</a></td>
+        <tr>
+            <td>Reloj</td>
+            <td>js</td>
+            <td><a href="https://github.com/vdevalen/reloj-basico-js">Click</a></td>
+        </tr>
+
+        <tr>
+            <td>Calculadora</td>
+            <td>Html,css,js</td>
+            <td><a href="https://github.com/vdevalen/calculadora-sencilla">Click</a></td>
+        </tr>
+
+        <tr>
+            <td>Lista Compras</td>
+            <td>Html,css,js</td>
+            <td><a href="https://github.com/vdevalen/lista-de-compras-">Click</a></td>
+        </tr>
+        <tr>
+            <td>Formulario</td>
+            <td>Html,css,js</td>
+            <td><a href="https://github.com/vdevalen/Formulario-con-validacion-de-datos.">Click</a></td>
+        </tr>
+    </table>
+</section>
+<!------------------------------PROYECTOS------------------------------------->
+
+<section class="proyectos-completos" id="proyectos-completos">
+    <hgroup class="titulo-proyectos" id="titulo-proyectos">
+        <h1>MIS PROYECTOS REALIZADOS</h1>
+        <h3>Muestra de <span>proyectos</span> realizados en el 2022:</h3>
+    </hgroup>
+
+    <div class="proyecto-campus">
+        <hgroup>
+            <h1>CAMPUS</h1>
+        </hgroup>
+        <figure>
+            <img src="/imagenes/c.png" alt="Imagen campus" width="900px" height="500px">
+            <figcaption>
+                Imagen CAMPUS: Home  "proyecto-campus". Autor: Valentina P. <a href="https://github.com/vdevalen/campus-separado" target="_blank">Codigo</a>
+            </figcaption>
+        </figure>
+    </div>
+<!-----------------------------proyecto form------------------------------------>
+
+    <div class="proyecto-formulario">
+        <hgroup>
+            <h1>FORMULARIO</h1>
+        </hgroup>
+        <figure>
+            <img src="/imagenes/formulario.png" alt="Imagen formulario" width="900px" height="500px">
+            <figcaption>
+                Imagen FORMULARIO: Home  "proyecto-formulario". Autor: Valentina P. <a href="https://github.com/vdevalen/Formulario-con-validacion-de-datos." target="_blank">Codigo</a>
+        </figcaption>
+        </figure>
+    </div>
+
+
+<!-----------------------------proyecto reloj----------------------------------->
+
+<div class="proyecto-reloj">
+    <hgroup>
+        <h1>RELOJ</h1>
+    </hgroup>
+    <figure>
+        <img src="/imagenes/reloj.png" alt="Imagen reloj" width="900px" height="500px">
+        <figcaption>
+            Imagen RELOJ: "proyecto-reloj". Autor: Valentina P. <a href="https://github.com/vdevalen/reloj-basico-js" target="_blank">Codigo</a>
+        </figcaption>
+    </figure>
+</div>
+
+
+<!-----------------------------proyecto reloj----------------------------------->
+<div class="proyecto-lista">
+    <hgroup>
+        <h1>LISTA</h1>
+    </hgroup>
+    <figure>
+        <img src="/imagenes/lista.png" alt="Imagen lista" width="900px" height="500px">
+        <figcaption>
+            Imagen Lista de compras: "proyecto-lista". Autor: Valentina P. <a href="https://github.com/vdevalen/lista-de-compras-" target="_blank">Codigo</a>
+        </figcaption>
+    </figure>
+</div>
+
+<!-----------------------------proyecto login basico----------------------------------->
+<div class="proyecto-login-basico">
+    <hgroup>
+        <h1>LOGIN</h1>
+    </hgroup>
+    <figure>
+        <img src="/imagenes/login-basicp.png" alt="Imagen login basico" width="900px" height="500px">
+        <figcaption>
+            Imagen login básico: "proyecto-login-básico". Autor: Valentina P. <a href="https://github.com/vdevalen/login-basico1" target="_blank">Codigo</a>
+        </figcaption>
+    </figure>
+</div>
+
+<!-----------------------------proyecto login intermedio----------------------------------->
+<div class="proyecto-login-intermedio">
+    <hgroup>
+        <h1>LOGIN 2</h1>
+    </hgroup>
+    <figure>
+        <img src="/imagenes/login-intermedio.png" alt="Imagen login intermedio" width="900px" height="500px">
+        <figcaption>
+            Imagen login Intermedio: "proyecto-login-intermedio". Autor: Valentina P. <a href="https://github.com/vdevalen/campus-separado/tree/main/login" target="_blank">Codigo</a>
+        </figcaption>
+    </figure>
+</div>
+
+<!-----------------------------proyecto registro----------------------------------->
+<div class="proyecto-registro">
+    <hgroup>
+        <h1>REGISTRO</h1>
+    </hgroup>
+    <figure>
+        <img src="/imagenes/registro.png" alt="Imagen registro" width="900px" height="500px">
+        <figcaption>
+            Imagen registro: "proyecto-registro". Autor: Valentina P. <a href="https://github.com/vdevalen/campus-separado/tree/main/resgistro" target="_blank">Codigo</a>
+        </figcaption>
+    </figure>
+</div>
+
+<!-----------------------------proyecto nosotros----------------------------------->
+<div class="proyecto-nosotros">
+    <hgroup>
+        <h1>NOSOTROS</h1>
+    </hgroup>
+    <figure>
+        <img src="/imagenes/equipo-nosotros.png" alt="Imagen nosotros" width="900px" height="500px">
+        <img src="/imagenes/equipo1.png" alt="Imagen nosotros" width="900px" height="500px">
+        <figcaption>
+            Imagen nosotros: "proyecto-nosotros". Autor: Valentina P. <a href="https://github.com/vdevalen/campus-separado/tree/main/resgistro" target="_blank">Codigo</a>
+        </figcaption>
+    </figure>
+</div>
+
+<!-----------------------------proyecto CONTACTA----------------------------------->
+
+<section class="contacto" id="contacto">
+    <hgroup>
+        <h4>CONTACTAME</h4>
+    </hgroup>
+    <form action="#">
+        <div class="datos-form" id="datos-form">
+            <div class="nombre">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+            </div>
+
+            <div class="email">
+                <label for="email">Email</label>
+                <input type="email" name="nombre" id="email" placeholder="email">
+            </div>
+        </div>
+        <div class="mensaje">
+            <label for="mensaje">Mensaje</label>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="3"></textarea> <!--cols:La anchura visible del control de texto, en caracteres de anchura media. Si está definido debe ser positivo.-->
+            <!--rows:El número de líneas visibles en el control-->
+        </div>
+
+        <div class="btn-contacto" class="btn-contacto" id="btn-contacto"> 
+            <button type="submit" name="btn" title="AboutMe" onclick="contacto()">Enviar Mensaje</button>
+        </div>
+        
+    </form>
+</section>
+
+<!------------------------------FOOTER------------------------------------->
+<footer>
+    <p>
+        Copyright &copy; 2022- Valentina Pinzon Montoya, todos los derechos reservados.
+    </p>
+    <address>
+    v.dev.valen@gmail.com
+    </address>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/comida">About</a></li>
+        <li><a href="/bebidas">Portafolio</a></li>
+        <li><a href="/bebidas">Skills</a></li>
+        <li><a href="/bebidas">Contact</a></li>
+    </ul>
+</footer>
+</body>
+</html>
